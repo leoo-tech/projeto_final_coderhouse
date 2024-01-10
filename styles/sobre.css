@@ -1,0 +1,31 @@
+header{
+    background-color: black;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    margin-left: 20px;
+    height: 100px;
+}
+
+nav{
+    margin-left: auto;
+
+}    
+
+nav ul{
+    list-style: none;
+    display: flex;
+}
+
+nav li{
+    margin-right: 200px;    
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
