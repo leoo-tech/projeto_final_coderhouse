@@ -1,4 +1,40 @@
+body{
+    margin: 0 auto;
+    background: hsl(0, 0%, 10%);    
+    display: flex;
+    flex-direction: column;
+    height: auto;    
+}
+
 header{
+    display: flex;
+    flex-direction: column;
+}
+.cabecalho1{
+    background: black;
+    width: auto;
+    height: 140px;
+    display: flex;  
+}
+.navegacao{
+    align-items: center;
+    margin: 5px;
+    margin-right: 60px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;    
+}
+.navegacao img{    
+    height: 120px;
+}
+.menu{    
+    color: white;    
+    text-decoration: none;
+    font-size: 25px;    
+}
+
+
+/*header{
     background-color: black;
     height: 120px;
     display: flex;
@@ -28,4 +64,44 @@ nav a{
     text-decoration: none;
     color: white;
     font-size: 20px;
+}*/
+
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.footer{
+    display: flex;
+}
+.logoTitle{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    margin-left: -15px;       
+}
+#brasao{
+    padding-top: 10px;
+    height: 80px;
+    margin-left: 20px;
+}
+#imgministerio{
+    height: 90px;
+    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
+}
+.redesSociais{
+    justify-content: end;
+    display: flex;
+    margin-right: 20px;
+}
+.redesSociais h1{
+    color: white;
+    font-size: 20px;
+}
+.redesSociais img{
+    height: 50px;
 }
