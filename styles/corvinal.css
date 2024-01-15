@@ -29,3 +29,160 @@ nav a{
     color: white;
     font-size: 20px;
 }
+
+main {
+    display: flex;
+}
+
+
+.bandeira_alunos{
+    width: 618px;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.info_casa{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.corvinal {
+    height: 335px;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    background-color: #252222;
+}
+
+.informacoes{
+    width: 80%;
+    height: 80%;
+    
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+div{
+    width: 250px;
+    height: 100px;
+    
+
+    font-family: 'Inria Sans', sans-serif;
+    color: white;
+
+
+}
+
+div h3{
+    margin-bottom: 8px;
+}
+
+div p {
+    margin-top: 0px;
+    line-height: 1.5rem;
+}
+
+.voltar {
+    width: 114px;
+    height: 38.77px;
+
+    border-radius: 38px;
+    background-color: #FFBD14;
+    color: #000;
+
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+
+    margin-left: 70px;
+}
+
+.lista_casas{
+    /* width: 160px; */
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.imagens{
+    width: 70px;
+}
+
+.curiosidades{
+    width: 100%;
+    height: 452px;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    background-color: #1B1A1A;
+
+}
+
+.curiosidades div {
+    width: 648px;
+    height: 351px;
+
+}
+
+.curiosidades h3{
+    margin-bottom: 0px;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0px;
+    
+}
+.footer{
+    display: flex;
+}
+.logoTitle{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    margin-left: -15px;       
+}
+#brasao{
+    padding-top: 10px;
+    height: 80px;
+    margin-left: 20px;
+}
+#imgministerio{
+    height: 90px;
+    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
+}
+.redesSociais{
+    justify-content: end;
+    display: flex;
+    margin-right: 20px;
+}
+.redesSociais h1{
+    color: white;
+    font-size: 20px;
+}
+.redesSociais img{
+    height: 50px;
+}
