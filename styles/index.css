@@ -1,9 +1,9 @@
 body{
-    margin: 0 auto;
-    background: hsl(0, 0%, 10%);    
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 10%);  
     display: flex;
     flex-direction: column;
-    height: auto;    
 }
 
 header{
@@ -33,47 +33,110 @@ header{
     font-size: 25px;    
 }
 
-
-/*header{
-    background-color: black;
-    height: 120px;
+main{
+    background-image: url(../imagens/fundo-index-1.png);
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;    
     display: flex;
+    flex-direction: column;
+    height: 960px;
+}
+.conteudoFigura1{
+    display: flex;
+}
+main h1{
+    color: #FFBD14;
+    line-height: 120px;
+    font-size: 140px;
+    margin-left: 100px;
+}
+main h2{
+    color: white;
+    margin-left: 100px;
+    font-size: 35px;
+    margin-top: -50px;
+}
+
+.logo{
+    margin-top: 50px;
+    display: flex;
+    margin-left: auto;
+    margin-right: 100px;
+    }
+
+main button{
+    background-color: #FFBD14;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 45px;
+    border-radius: 20px;
+    text-align: center;
+    margin-left: 140px;
+}
+main button a{
+    color: black;
+    text-decoration: none;    
+}
+
+
+.apresentacao1{
+    background-color: black;
+}
+.apresentacao1 p{
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-size: 25px;
+}
+.apresentacao2{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
-
-header img{
-    margin-left: 20px;
-    height: 100px;
+.apresentacao2 img{    
+    margin: 0;
+    padding: 0;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;    
+    height: 960px;
 }
-
-nav{
-    margin-left: auto;
-
-}    
-
-nav ul{
-    list-style: none;
-    display: flex;
-}
-
-nav li{
-    margin-right: 200px;    
-}
-
-nav a{
-    text-decoration: none;
+.apresentacao2 p{
     color: white;
-    font-size: 20px;
-}*/
+    height: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 60px;
+    font-size: 25px;    
+}
 
+.apresentacao2 button{
+    background-color: #FFBD14;
+    font-size: 20px;
+    font-weight: bold;
+    width: 300px;
+    height: 45px;
+    border-radius: 20px;
+    margin-bottom: 60px;
+    
+}
+.apresentacao2 button a{
+    color: black;
+    text-decoration: none; 
+}
 footer{
     background-color: black;
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
-    
+    margin-top: 30px;       
 }
 .footer{
     display: flex;
