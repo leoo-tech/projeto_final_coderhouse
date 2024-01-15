@@ -24,6 +24,7 @@ header{
     list-style: none;
     justify-content: space-between;    
 }
+
 .navegacao img{    
     height: 120px;
 }
@@ -31,4 +32,74 @@ header{
     color: white;    
     text-decoration: none;
     font-size: 25px;    
+}
+.conteudo{    
+    display: flex;
+    flex-direction: column;    
+}
+.lado-a-lado{
+    display: flex;
+}
+.conteudo img{
+    margin-top: 100px;
+    margin-left: 80px;
+    border-radius: 15px;
+}
+.conteudo aside{
+    background-color: hsl(0, 0%, 5%);
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-right: 80px;
+    border-radius: 15px;
+}
+
+.conteudo aside h1{
+    margin: 25px;
+    color: white;
+    font-size: 30px;
+}
+.conteudo aside p{
+    margin: 25px;
+    color: white;
+    font-size: 20px;
+    text-indent: 50px;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;    
+}
+.footer{
+    display: flex;
+}
+.logoTitle{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    margin-left: -15px;       
+}
+#brasao{
+    padding-top: 10px;
+    height: 80px;
+    margin-left: 20px;
+}
+#imgministerio{
+    height: 90px;
+    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
+}
+.redesSociais{
+    justify-content: end;
+    display: flex;
+    margin-right: 20px;
+}
+.redesSociais h1{
+    color: white;
+    font-size: 20px;
+}
+.redesSociais img{
+    height: 50px;
 }
