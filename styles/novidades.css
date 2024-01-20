@@ -9,13 +9,13 @@ body{
     grid-template-columns: auto;
     grid-template-rows: 140px 120px auto 100px;
     grid-template-areas: 
-    "cabecalho1"
+    "cabecalho"
     "contagem"
     "corpo"
     "rodape";
 }
-.cabecalho1{
-    grid-area: cabecalho1;
+.cabecalho{
+    grid-area: cabecalho;
     background: black;
     width: auto;    
 }
