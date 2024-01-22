@@ -1,136 +1,170 @@
-header{
-    background-color: black;
-    height: 120px;
-    display: flex;
-    align-items: center;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-header img{
-    margin-left: 20px;
-    height: 100px;
+body {
+  background-color: #5b5a5a;
+  width: 100%;
+  height: 100%;
 }
 
-nav{
-    margin-left: auto;
-
-}    
-
-nav ul{
-    list-style: none;
-    width: 100%;
-    display: flex;
+a:hover {
+  color: #e6af2e;
 }
 
-nav li{
-    margin-right: 200px;    
+nav {
+  margin-top: -60px;
+  margin-left: 400px;
 }
 
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
+nav ul {
+  list-style: none;
+  width: 100%;
+  text-align: center;
+  display: inline-flex;
 }
 
-main{
-    display: flex;
+nav li {
+  margin: 10px 20px;
 }
 
-
-.imagem{
-    width: 747px;
-    height: 765px;
-    background-image: url('../imagens/alunos_hogwarts.png');
-    background-size: cover;
-    background-position: center;
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
 }
 
-.texto{
-    width: 50%;
-    height: 765px;
-    display: flex;
-    align-items: center;
-    background-color: #313131;
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "imagem texto texto"
+    "imagem lista-alunos lista-alunos"
+    "rodape rodape rodape";
+  grid-template-rows: 100px 40vh 30vh 10vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
 }
 
-article{
-    width: 100%;
-    height: 459px;
+.header {
+  grid-area: header;
+  background-color: #000000;
+  padding: 10px;
 }
 
-article h1{
-    font-family: 'Inria Sans', sans-serif;
-    font-weight: 700;
-    color: #fff;
-    text-align: center;
-    margin-bottom: 30px;
+.header img {
+  height: 80px;
 }
 
-article p{
-    font-family: 'Inria Sans', sans-serif;
-    font-weight: 400;
-    color: #fff;
-    margin-bottom: 40px;
-    margin-left: 15px;
+.imagem {
+  grid-area: imagem;
+  background-image: url("../imagens/alunos_hogwarts.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  margin: 20px 10px;
+  background-color: #ccc;
+  padding: 20px;
 }
 
-.destaques{
-    display: flex;
-    margin-left: 15px;
+.texto {
+  grid-area: texto;
+  background-color: #060606;
+  padding: 20px;
+  border-radius: 10px;
+
+  margin: 20px 10px;
 }
 
-article div{
-    width: 129px;
-    height: 117px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    row-gap: 10px;
+.texto p {
+  font-size: 17px;
+  text-wrap: wrap;
+  line-height: 3cap;
+  color: #ffffff;
+  text-align: justify;
 }
 
-article div a{
-    font-family: 'Inria Sans', sans-serif;
-    font-weight: 400;
-    color: #fff;
-    text-decoration: none;
+#subtitulo {
+  font-size: 30px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
 }
 
-footer{
-    background-color: black;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 0px;
-    
+.lista-alunos {
+  grid-area: lista-alunos;
+  background-color: #050505;
+  padding: 20px;
+  border-radius: 10px;
+  margin-left: 10px;
+  width: 62vw;
 }
-.footer{
-    display: flex;
+.lista-alunos h3 {
+  font-size: 20px;
+  text-align: center;
+  font-weight: bold;
+  color: #ffffff;
 }
-.logoTitle{
-    font-size: 20px;
-    color: white;
-    padding-top: 10px;
-    margin-left: -15px;       
+
+.lista-alunos ul {
+  list-style: none;
+  font-size: 15px;
+  text-align: center;
 }
-#brasao{
-    padding-top: 10px;
-    height: 80px;
-    margin-left: 20px;
+
+.lista-alunos li {
+  margin: 10px 6px;
+  border: 1px solid #fbfafa;
+  border-radius: 10px;
+  width: 300px;
 }
-#imgministerio{
-    height: 90px;
-    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
+
+.lista-alunos a {
+  text-decoration: none;
+  color: #fffefe;
+  margin-left: 20px;
 }
-.redesSociais{
-    justify-content: end;
-    display: flex;
-    margin-right: 20px;
+
+.lista-alunos a:hover {
+  color: #e6af2e;
 }
-.redesSociais h1{
-    color: white;
-    font-size: 20px;
+
+.rodape {
+  grid-area: rodape;
+  background-color: #000000;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-.redesSociais img{
-    height: 50px;
+
+.logoTitle {
+  font-size: 15px;
+  color: white;
+  margin-left: -300px;
+}
+#brasao {
+  padding-top: 10px;
+  height: 70px;
+  margin-left: 20px;
+}
+#imgministerio {
+  height: 70px;
+  filter: invert(
+    1
+  ); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/
+}
+.redesSociais {
+  justify-content: flex-end;
+  display: flex;
+  margin-right: 50px;
+}
+.redesSociais h4 {
+  color: white;
+  font-size: 20px;
+}
+.redesSociais img {
+  height: 50px;
 }
