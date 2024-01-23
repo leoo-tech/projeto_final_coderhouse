@@ -1,20 +1,23 @@
 body{
     margin: 0 auto;
     background: hsl(0, 0%, 10%);    
-    display: flex;
-    flex-direction: column;
     height: auto;    
 }
-
-header{
-    display: flex;
-    flex-direction: column;
+.conteiner{
+    display: grid;
+    row-gap: 20px;
+    grid-template-columns: auto;
+    grid-template-rows: 140px 120px auto 100px;
+    grid-template-areas: 
+    "cabecalho"
+    "contagem"
+    "corpo"
+    "rodape";
 }
-.cabecalho1{
+.cabecalho{
+    grid-area: cabecalho;
     background: black;
-    width: auto;
-    height: 140px;
-    display: flex;  
+    width: auto;    
 }
 .navegacao{
     align-items: center;
@@ -22,7 +25,8 @@ header{
     margin-right: 60px;
     display: flex;
     list-style: none;
-    justify-content: space-between;    
+    display: flex;  
+    justify-content: space-between;
 }
 .navegacao img{    
     height: 120px;
@@ -30,19 +34,21 @@ header{
 .menu{    
     color: white;    
     text-decoration: none;
-    font-size: 25px;    
+    font-size: 25px;         
 }
-
-.cabecalho2{
+.menu:hover{
+    font-size: 30px;
+}
+.contagem{
+    grid-area: contagem;
     background-color: hsl(0, 0%, 5%);
     width: auto;
     height: 120px;
-    margin-top: 20px;
-    display: flex;    
+    display: flex;
     align-items: center;
-    justify-content:space-between;
+    justify-content: space-between;
 }
-.cabecalho2 h1{
+.contagem h1{
     font-size: 30px;
     color: white;
     margin-left: 30px;
@@ -53,69 +59,68 @@ header{
     margin-bottom: 5px;    
 }
 .copaContagem{
-    color: white;
+    color: hsl(0, 0%, 10%);
     margin-right: 120px;
     font-size: 30px;
 }
-.conteudo{    
-    display: flex;
-    flex-direction: column;    
-}
-.lado-a-lado{
-    display: flex;
-}
-.conteudo img{
-    margin-top: 145px;
-    margin-left: 80px;
-    border-radius: 15px;
-}
-.conteudo aside{
-    background-color: hsl(0, 0%, 5%);
-    margin-top: 145px;
-    margin-left: 50px;
-    margin-right: 80px;
-    border-radius: 15px;
-}
-
-.conteudo aside h1{
-    margin: 25px;
+.copaContagem:hover{
     color: white;
+    font-size: 35px;
+}
+.conteudo{
+    grid-area: corpo;
+    display: grid;
+    margin: 0px 80px 0px 80px;
+    column-gap: 50px;
+    row-gap: 20px;
+    grid-template-columns: 640px auto;
+    grid-template-rows: 430px auto;
+    grid-template-areas: 
+    "image copaMundial"
+    "quadribol quadribol";    
+}
+img{
+    grid-area: image;
+}
+.copaMundial{
+    grid-area: copaMundial;
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    border-radius: 15px;
+}
+.copaMundial h1{
+    margin: 25px;    
     font-size: 30px;
 }
-.conteudo aside p{
-    margin: 25px;
-    color: white;
+.copaMundial p{
+    margin: 25px;    
     font-size: 20px;
     text-indent: 50px;
 }
-
-.section1{
+.quadribol{
+    grid-area: quadribol;
     background-color: hsl(0, 0%, 5%);
     color: white;
-    padding: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 25px;
     border-radius: 15px;
 }
-.section1 h1{
+.quadribol h1{
     font-size: 30px;
+    margin: 25px;
 }
-.section1 p{
+.quadribol p{
     font-size: 20px;
     text-indent: 50px;
+    margin: 25px;
 }
-
 footer{
+    grid-area: rodape;
     background-color: black;
     height: 100px;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-    
+    align-items: center;    
 }
-.footer{
+.logo{
     display: flex;
 }
 .logoTitle{

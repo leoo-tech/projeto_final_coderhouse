@@ -1,20 +1,20 @@
 body{
-    margin: 0 auto;
+    margin: 0;
     background: hsl(0, 0%, 10%);    
     display: flex;
     flex-direction: column;
-    height: auto;    
+    height: auto;
+    min-height: 100vh; 
 }
-
 header{
     display: flex;
     flex-direction: column;
 }
-.cabecalho1{
+
+.cabecalho{
+    grid-area: cabecalho;
     background: black;
-    width: auto;
-    height: 140px;
-    display: flex;  
+    width: auto;    
 }
 .navegacao{
     align-items: center;
@@ -22,39 +22,45 @@ header{
     margin-right: 60px;
     display: flex;
     list-style: none;
-    justify-content: space-between;    
+    display: flex;  
+    justify-content: space-between;
 }
-
 .navegacao img{    
     height: 120px;
 }
 .menu{    
     color: white;    
     text-decoration: none;
-    font-size: 25px;    
+    font-size: 25px;         
+}
+.menu:hover{
+    font-size: 30px;
 }
 .conteudo{    
     display: flex;
+    box-sizing: border-box;
     flex-direction: column;    
 }
 .lado-a-lado{
     display: flex;
 }
 .conteudo img{
-    margin-top: 100px;
-    margin-left: 80px;
+    max-width:400px;
+    max-height:400px;
+    margin-top: 50px;
+    margin-left: 50px;
     border-radius: 15px;
 }
 .conteudo aside{
     background-color: hsl(0, 0%, 5%);
-    margin-top: 100px;
+    margin-top: 50px;
     margin-left: 50px;
-    margin-right: 80px;
+    margin-right: 50px;
     border-radius: 15px;
+    height: 350px;
 }
-
 .conteudo aside h1{
-    margin: 25px;
+    padding: 25px;
     color: white;
     font-size: 30px;
 }
@@ -62,18 +68,20 @@ header{
     margin: 25px;
     color: white;
     font-size: 20px;
-    text-indent: 50px;
+    align-items: center;
 }
-
 footer{
+    grid-area: rodape;
     background-color: black;
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
-.footer{
+.logo{
     display: flex;
 }
 .logoTitle{
