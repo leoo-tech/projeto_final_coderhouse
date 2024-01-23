@@ -3,24 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="styles/casas.css">
     <title>As Casas de Hogwarts</title>
 </head>
 <body>
-    <header>
-        <a href="index.html"><img src="imagens/logo.png" alt="Brasão da Escola de Hogwarts"></a>
-        <nav>
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="sobre.html">sobre</a></li>
-                <li><a href="disciplinas.html">disciplinas</a></li>
-                <li><a href="docentes.html">corpo docente</a></li>
-                <li><a href="novidades.html">novidades</a></li>
-                <li><a href="contato.html">contatos</a></li>
-            </ul>
-        </nav>
+        <header class="cabecalho1">
+        <ul class="navegacao"> 
+            <li class="menu"><a class="menu" href="index.html"><img src="imagens/logo.png" alt="Brasão da Escola de Hogwarts"></a></li>
+            <li class="menu"><a class="menu"href="sobre.html">sobre</a></li>
+            <li class="menu"><a class="menu"href="casas.html">casas</a></li>
+            <li class="menu"><a class="menu"href="disciplinas.html">disciplinas</a></li>
+            <li class="menu"><a class="menu"href="docentes.html">corpo docente</a></li>
+            <li class="menu"><a class="menu"href="novidades.html">novidades</a></li>
+            <li class="menu"><a class="menu"href="contato.html">contato</a></li>
+        </ul>
     </header>
-
+    <div class="container">
     <section id="casas">
         <h1>As 4 casas de Hogwarts</h1>
         <article>
@@ -30,34 +29,34 @@
         </article>
         <aside>
             <nav>
-                <ul>
-                    <li><a href="grifinoria.html">Grifinória<img src="imagens/Grifinória.png" alt="Brasão da Casa Grifinória"></a></li>
-                    <li><a href="sonserina.html">Sonserina<img src="imagens/Sonserina.png" alt="Brasão da Casa Sonserina"></a></li>
-                    <li><a href="corvinal.html">Cornival<img src="imagens/Corvinal.png" alt="Brasão da Casa Cornival"></a></li>
-                    <li><a href="lufalufa.html">Lufa-Lufa<img src="imagens/Lufa-lufawebp.webp" alt="Brasão da Casa Lufa-Lufa"></a></li>            
+                <ul class="lado-a-lado">
+                    <li class="grifinoria"><a href="grifinoria.html"><img src="imagens/grifinória_intro.png" alt="Brasão da Casa Grifinória"></a></li>
+                    <li class="sonserina"><a href="sonserina.html"><img src="imagens/sonserina_intro.png" alt="Brasão da Casa Sonserina"></a></li>
+                    <li class="corvinal"><a href="corvinal.html"><img src="imagens/corvinal_intro.png" alt="Brasão da Casa Cornival"></a></li>
+                    <li class="lufalufa"><a href="lufalufa.html"><img src="imagens/lufalufa_intro.png" alt="Brasão da Casa Lufa-Lufa"></a></li>            
                 </ul>
             </nav>            
         </aside>
+        <div class="apresentacao2">
         <button><a href="contato.html">seja aluno</a></button>
-        
+        </div>
     </section>
-
-
-
-
-
+</div>
     <footer>
-        <a href="index.html"><img src="imagens/logo.png" alt="Brasão da Escola de Hogwarts"></a>
-        <h1>Escola de Magia e Bruxaria de Hogwarts</h1>
+        <div class="footer">
+            <a href="index.html"><img class="logoTitle" id="brasao" src="imagens/logo.png" alt="Brasão da Escola de Hogwarts"></a>
+            <h1 class="logoTitle">Escola de Magia e <br> Bruxaria de Hogwarts</h1>
+        </div>
         
-        <img src="imagens/ministerio-logo.png" alt="logo do Ministério da Magia">
-
-        <h1>Redes Sociais:</h1>
-        <img src="imagens/instagram.png" alt="Ícone para direcionar para o Instagram">
-        <img src="imagens/facebook.png" alt="Ícone para direcionar para o facebook">
-        <img src="imagens/twitterx.png" alt="Ícone para direcionar para o twitter">
-        <img src="imagens/linkedin.png" alt="Ícone para direcionar para o linkedin">
-    </footer>
+        <img id="imgministerio" src="imagens/ministerio-logo.png" alt="logo do Ministério da Magia">
     
+        <div class="redesSociais">
+            <h1>Redes Sociais:</h1>
+            <img src="imagens/instagram.png" alt="Ícone para direcionar para o Instagram">
+            <img src="imagens/facebook.png" alt="Ícone para direcionar para o facebook">
+            <img src="imagens/twitterx.png" alt="Ícone para direcionar para o twitter">
+            <img src="imagens/linkedin.png" alt="Ícone para direcionar para o linkedin">
+        </div>
+    </footer>
 </body>
 </html>
