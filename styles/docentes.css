@@ -1,10 +1,37 @@
 header{
-    background-color: black;
-    height: 120px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
 }
 
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 10%);  
+    display: flex;
+    flex-direction: column;
+}
+.cabecalho1{
+    background: rgb(0, 0, 0);
+    width: auto;
+    height: 140px;
+    display: flex;  
+}
+.navegacao{
+    align-items: center;
+    margin: 5px;
+    margin-right: 60px;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;    
+}
+.navegacao img{    
+    height: 120px;
+}
+.menu{    
+    color: white;    
+    text-decoration: none;
+    font-size: 25px;    
+}
 header img{
     margin-left: 20px;
     height: 100px;
@@ -12,7 +39,7 @@ header img{
 
 nav{
     margin-left: auto;
-
+    background-color: rgb(0, 0, 0);
 }    
 
 nav ul{
@@ -26,6 +53,142 @@ nav li{
 
 nav a{
     text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+footer{
+    background-color: black;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+    
+}
+.footer{
+    display: flex;
+}
+.logoTitle{
+    font-size: 20px;
+    color: white;
+    padding-top: 10px;
+    margin-left: -15px;       
+}
+#imgministerio{
+    height: 90px;
+    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
+}
+.redesSociais{
+    justify-content: end;
+    display: flex;
+    margin-right: 20px;
+}
+.redesSociais h1{
     color: white;
     font-size: 20px;
+}
+.redesSociais img{
+    height: 50px;
+}
+#brasao{
+    padding-top: 10px;
+    height: 80px;
+    margin-left: 20px;
+}
+.section1{
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 25px;
+    border-radius: 15px;
+    height: auto;
+    float: left;
+}
+.section1 h1{
+    font-size: 30px;
+}
+.section1 p{
+    font-size: 20px;
+    text-indent: 50px;
+}
+.section1 img{
+    float: right;
+    width: 30%;
+}
+.section2{
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 25px;
+    border-radius: 15px;
+    height: auto;
+    float: left;
+}
+.section2 h1{
+    font-size: 30px;
+}
+.section2 p{
+    font-size: 20px;
+    text-indent: 50px;
+}
+.section2 img{
+    float: right;
+    width: 30%;
+}
+.section3{
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 25px;
+    border-radius: 15px;
+    height: auto;
+    float: left;
+}
+.section3 h1{
+    font-size: 30px;
+}
+.section3 p{
+    font-size: 20px;
+    text-indent: 50px;
+}
+.section3 img{
+    float: right;
+    width: 30%;
+}
+.section4{
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    padding: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 25px;
+    border-radius: 15px;
+    height: auto;
+    float: left;
+}
+.section4 h1{
+    font-size: 30px;
+}
+.section4 p{
+    font-size: 20px;
+    text-indent: 50px;
+}
+.section4 img{
+    float: right;
+    width: 30%;
+}
+.lado-a-lado{
+    display: grid;
+    grid-template-columns: 1fr 1 fr;
+    gap: 10px;
+    grid-template-areas: 
+    "section1 section2"
+    "section3 section4";
 }
