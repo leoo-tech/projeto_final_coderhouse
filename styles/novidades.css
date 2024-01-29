@@ -37,7 +37,9 @@ body{
     font-size: 25px;         
 }
 .menu:hover{
-    font-size: 30px;
+    color: white;
+    text-decoration: none;
+    font-size: 30px;    
 }
 .contagem{
     grid-area: contagem;
