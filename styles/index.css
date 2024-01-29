@@ -52,12 +52,13 @@ main h1{
     line-height: 120px;
     font-size: 140px;
     margin-left: 100px;
+    margin-top: 10%;
 }
 main h2{
     color: white;
     margin-left: 100px;
     font-size: 35px;
-    margin-top: -50px;
+    margin-top: 10%;
 }
 
 .logo{
@@ -76,13 +77,12 @@ main button{
     border-radius: 20px;
     text-align: center;
     margin-left: 140px;
+    margin-top: 10%;
 }
 main button a{
     color: black;
     text-decoration: none;    
 }
-
-
 .apresentacao1{
     background-color: black;
 }
