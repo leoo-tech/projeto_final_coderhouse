@@ -3,7 +3,7 @@ header{
     height: 7.5rem;
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 header img{
@@ -19,13 +19,28 @@ nav ul{
     list-style: none;
     display: flex;
     justify-content: space-around;
-    align-items: space-around;
+    align-items: center;
 }
 
 nav a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 20px;  
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;   
+}
+
+.dropdown-menu{
+    background: hsl(0, 0%, 10%);
+    color: white;
+    font-size: 30px;   
+}
+.dropdown-item{
+    color: white;
 }
 
 main {
