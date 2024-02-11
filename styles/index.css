@@ -1,7 +1,7 @@
 body{
     margin: 0 auto;
-    background: hsl(0, 0%, 10%);    
-    height: auto; 
+    background: hsl(0, 0%, 0%); 
+    height: auto;    
 }
 
 header{
@@ -9,7 +9,7 @@ header{
     height: 7.5rem;
     width: 100%;
     display: flex;
-    align-items: center;    
+    align-items: center;
 }
 
 header img{
@@ -121,6 +121,7 @@ main button a{
     background-position: center;
     background-repeat: no-repeat;    
     height: 960px;
+    width: 100%;
 }
 .apresentacao2 p{
     color: white;
@@ -144,9 +145,6 @@ main button a{
 .apresentacao2 button a{
     color: black;
     text-decoration: none; 
-}
-.apresentacao2 img{
-    width: 100%;
 }
 footer{
     background-color: black;

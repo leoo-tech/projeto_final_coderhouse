@@ -81,6 +81,8 @@ a:hover {
 .texto {
   grid-area: texto;
   background-color: #060606;
+  width: auto;
+  height: 100%;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 10px;
@@ -92,10 +94,12 @@ a:hover {
   line-height: 3cap;
   color: #ffffff;
   text-align: justify;
+  font-size: 15px;
+  margin-bottom: 0;
 }
 
-#subtitulo {
-  font-size: 30px;
+#subtitulo{
+  font-size: auto;
   text-align: center;
   font-weight: bold;
   color: #ffffff;
@@ -104,6 +108,7 @@ a:hover {
 .lista-alunos {
   grid-area: lista-alunos;
   background-color: #050505;
+  height: 90%;
   padding: 20px;
   border-radius: 10px;
   margin: 20px 10px;
@@ -138,6 +143,10 @@ a:hover {
 
 .lista-alunos a:hover {
   color: #e6af2e;
+}
+.lista{
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .rodape {

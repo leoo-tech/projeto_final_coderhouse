@@ -48,6 +48,9 @@ nav a:hover{
 .dropdown-item{
     color: white;
 }
+.conteudo{
+    margin: 5%;
+}
 
 footer{
     background-color: black;
@@ -92,89 +95,89 @@ footer{
     background-color: hsl(0, 0%, 5%);
     color: white;
     padding: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 25px;
+    margin-right: 0px;
     border-radius: 15px;
-    height: auto;
-    float: left;
+    height: 385px;
+    width: 365px;
 }
 .section1 h1{
     font-size: 30px;
 }
 .section1 p{
-    font-size: 20px;
+    font-size: 13px;
     text-indent: 50px;
 }
-.section1 img{
-    float: right;
-    width: 30%;
+.imgsobre1{
+    margin-left: 20px;
+    width: 158px;
+    height: 175px;
+    align-self: center;
 }
 .section2{
     background-color: hsl(0, 0%, 5%);
     color: white;
     padding: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 25px;
+    margin-right: 0px;
     border-radius: 15px;
-    height: auto;
-    float: left;
+    height: 385px;
+    width: 365px;
 }
 .section2 h1{
     font-size: 30px;
 }
 .section2 p{
-    font-size: 20px;
+    font-size: 15px;
     text-indent: 50px;
 }
-.section2 img{
-    float: right;
-    width: 30%;
+.imgsobre2{
+    margin-left: 20px;
+    width: 158px;
+    height: 175px;
+    align-self: center;
 }
 .section3{
     background-color: hsl(0, 0%, 5%);
     color: white;
     padding: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 25px;
+    margin-right: 0px;
     border-radius: 15px;
-    height: auto;
-    float: left;
+    height: 385px;
+    width: 365px;
 }
 .section3 h1{
     font-size: 30px;
 }
 .section3 p{
-    font-size: 20px;
+    font-size: 15px;
     text-indent: 50px;
 }
-.section3 img{
-    float: right;
-    width: 30%;
+.imgsobre3{
+    margin-left: 20px;
+    width: 158px;
+    height: 175px;
+    align-self: center;
 }
 .section4{
     background-color: hsl(0, 0%, 5%);
     color: white;
     padding: 20px;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 25px;
+    margin-right: 0px;
     border-radius: 15px;
-    height: auto;
-    float: left;
+    height: 385px;
+    width: 365px;
 }
 .section4 h1{
     font-size: 30px;
 }
 .section4 p{
-    font-size: 20px;
+    font-size: 15px;
     text-indent: 50px;
 }
-.section4 img{
-    float: right;
-    width: 30%;
+.imgsobre4{
+    margin-left: 20px;
+    width: 158px;
+    height: 175px;
+    align-self: center;
 }
 .lado-a-lado{
     display: grid;
@@ -183,4 +186,20 @@ footer{
     grid-template-areas: 
     "section1 section2"
     "section3 section4";
+}
+.lado1{
+    display: flex;
+    align-items: center;
+}
+.lado2{
+    display: flex;
+    align-items: center;
+}
+.lado3{
+    display: flex;
+    align-items: center;
+}
+.lado4{
+    display: flex;
+    align-items: center;
 }
