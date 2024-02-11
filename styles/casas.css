@@ -72,6 +72,7 @@ section p{
 }
 section img{
     width: 150%;
+    height: 100%;
 }
 .apresentacao2 button{
     display: block;
