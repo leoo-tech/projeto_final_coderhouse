@@ -1,11 +1,56 @@
 body{
     margin: 0 auto;
     background: hsl(0, 0%, 10%);    
-    height: auto;    
+    height: auto; 
 }
+
+header{
+    background-color: #000000;
+    height: 7.5rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header img{
+    margin-left: 20px;
+    height: 6.25rem;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;  
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;   
+}
+
+.dropdown-menu{
+    background: hsl(0, 0%, 10%);
+    color: white;
+}
+.dropdown-item{
+    color: white;
+}
+
 .conteiner{
     display: grid;
-    row-gap: 20px;
+    row-gap: 2%;
     grid-template-columns: auto;
     grid-template-rows: 140px 120px auto 100px;
     grid-template-areas: 
@@ -13,31 +58,6 @@ body{
     "contagem"
     "corpo"
     "rodape";
-}
-.cabecalho{
-    grid-area: cabecalho;
-    background: black;
-    width: auto;    
-}
-.navegacao{
-    align-items: center;
-    margin: 5px;
-    margin-right: 60px;
-    display: flex;
-    list-style: none;
-    display: flex;  
-    justify-content: space-between;
-}
-.navegacao img{    
-    height: 120px;
-}
-.menu{    
-    color: white;    
-    text-decoration: none;
-    font-size: 25px;         
-}
-.menu:hover{
-    font-size: 30px;
 }
 .contagem{
     grid-area: contagem;
@@ -71,8 +91,8 @@ body{
     grid-area: corpo;
     display: grid;
     margin: 0px 80px 0px 80px;
-    column-gap: 50px;
-    row-gap: 20px;
+    column-gap: 5%;
+    row-gap: 3%;
     grid-template-columns: 640px auto;
     grid-template-rows: 430px auto;
     grid-template-areas: 
@@ -81,6 +101,7 @@ body{
 }
 img{
     grid-area: image;
+    border-radius: 15px;
 }
 .copaMundial{
     grid-area: copaMundial;

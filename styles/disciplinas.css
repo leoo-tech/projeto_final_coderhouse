@@ -1,40 +1,52 @@
 body{
-    margin: 0;
-    padding: 0;
-    background-color: hsl(0, 0%, 10%);  
     display: flex;
     flex-direction: column;
 }
 header{
+    background-color: #000000;
+    height: 7.5rem;
+    width: 100%;
     display: flex;
-    flex-direction: column;
-}
-.cabecalho1{
-    background: black;
-    width: auto;
-    height: 140px;
-    display: flex;  
-}
-.navegacao{
     align-items: center;
-    margin: 5px;
-    margin-right: 60px;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;    
-}
-.navegacao img{    
-    height: 120px;
-}
-.menu{    
-    color: white;    
-    text-decoration: none;
-    font-size: 25px;    
 }
 
+header img{
+    margin-left: 20px;
+    height: 6.25rem;
+}
+
+nav{
+    width: 100%;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;  
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;   
+}
+
+.dropdown-menu{
+    background: hsl(0, 0%, 10%);
+    color: white;
+}
+.dropdown-item{
+    color: white;
+}
 main{
-    background-image: img src="fundo_disciplinas.png";
-    margin: 0;
+    background-image: url(../imagens/fundo_disciplinas.png);
     padding: 0;
     background-size: 100% 100%;
     background-position: center;
@@ -42,6 +54,9 @@ main{
     display: flex;
     flex-direction: column;
     height: 960px;
+}
+.lado-a-lado{
+    display: flex;
 }
 .conteudoFigura1{
     display: flex;
@@ -76,65 +91,14 @@ main button{
     text-align: center;
     margin-left: 140px;
 }
-
-.caixa {
-      width: 200px;
-      height: 100px;
-      margin: 10px;
-      padding: 10px;
-      border: 1px solid #ccc;
-      background-color:black;
-      box-sizing: border-box;
-      overflow: hidden;
-      word-wrap: break-word;
-      margin: 10px;
-      justify-content: space-around;
-    }
-
-    .caixa1 {
-        background-color: black;
-      }
-    .caixa2 {
-        background-color: black;
-      }
-    .caixa3 {
-        background-color: black;
-      }
-    .caixa4 {
-        background-color: black;
-      }
-    .caixa5 {
-        background-color: black;
-      }
-    .caixa6 {
-        background-color: black;
-      }
-      .caixa7 {
-        background-color: black;
-      }
-    .caixa8 {
-        background-color: black;
-      }
-    .caixa9 {
-        background-color: black;
-      }
-    .caixa10 {
-        background-color: black;
-      }
-    .caixa11 {
-        background-color: black;
-      }
-
 footer{
     background-color: black;
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;
-    
 }
-.footer{
+.logo{
     display: flex;
 }
 .logoTitle{
@@ -155,8 +119,8 @@ footer{
 .redesSociais{
     justify-content: end;
     display: flex;
-    margin-right: 20px;
-}
+     margin-right: 20px;
+ }
 .redesSociais h1{
     color: white;
     font-size: 20px;

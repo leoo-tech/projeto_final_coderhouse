@@ -1,85 +1,196 @@
 header{
-    background-color: black;
-    height: 120px;
+    background-color: #000000;
+    height: 7.5rem;
+    width: 100%;
     display: flex;
-    align-items: center;
+    align-items: center;    
 }
 
 header img{
     margin-left: 20px;
-    height: 100px;
+    height: 6.25rem;
 }
 
 nav{
-    margin-left: auto;
-
-}    
+    width: 100%;
+}
 
 nav ul{
     list-style: none;
     display: flex;
-}
-
-nav li{
-    margin-right: 200px;    
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav a{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 20px;  
+}
+
+nav a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;   
+}
+
+.dropdown-menu{
+    background: hsl(0, 0%, 10%);
+    color: white;
+    font-size: 30px;   
+}
+.dropdown-item{
+    color: white;
 }
 
 main {
-    display: flex;
+    display: grid;
+    height: 45.063rem;
+    grid-template-columns: 32% 68%;
+    grid-template-rows: 100%;
 }
 
 
-.bandeira_alunos{
-    width: 618px;
-    height: 100%;
 
-    display: flex;
-    flex-direction: column;
+.bandeira_alunos{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50%;
+    
+}
+
+.bandeira_img{
+    background-image: url("../imagens/corvinal_intro.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.alunos_img{
+    background-image: url("../imagens/alunos_corvinal.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.principal{
+    display: grid;
+    height: 45.063rem;
+    grid-template-columns: 100%;
+    grid-template-rows: 40%;
 }
 
 .info_casa{
     height: 100%;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.corvinal {
-    height: 335px;
-    width: 100%;
-
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-
     background-color: #252222;
+    display: grid;
+    grid-template-columns: 45% 45% 10%;
+    grid-template-rows: 100%;
 }
 
-.informacoes{
+.primeiro_bloco{
     width: 80%;
-    height: 80%;
-    
+    height: 100%;
+    padding-left: 20%;
 
     display: flex;
-    justify-content: center;
-    align-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    
-}
+    flex-direction: column;
+    gap: 2rem;
 
-div{
-    width: 250px;
-    height: 100px;
-    
+    align-items: flex-start;
+    justify-content: center;
 
     font-family: 'Inria Sans', sans-serif;
+    line-height: .6rem;
+    color: white;
+}
+
+.primeiro_bloco h3 {
+    font-weight: 700;
+}
+
+.primeiro_bloco p {
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.segundo_bloco{
+    width: 100%;
+    height: 93%;
+    padding-top: 7%;
+    
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    font-family: 'Inria Sans', sans-serif;
+    line-height: .5rem;
+    color: white;
+}
+
+.links_casas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+}
+
+
+.links_casas a{
+    width: 70px;
+}
+
+.curiosidades{
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    background-color: #1B1A1A;
+
+}
+
+.curiosidades div{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 2rem;
+
+}
+
+.curiosidades div h3{
+
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+
+
+}
+
+
+.curiosidades div p{
+
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 300;
+    opacity: .8;
+    font-size: 18px;
+    color: white;
+
+
+}
+
+.curiosidades div span{
+
+    font-family: 'Inria Sans', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
     color: white;
 
 
@@ -96,7 +207,7 @@ div p {
 
 .voltar {
     width: 114px;
-    height: 38.77px;
+    height: 40px;
 
     border-radius: 38px;
     background-color: #FFBD14;
@@ -104,8 +215,7 @@ div p {
 
     font-family: 'Inria Sans', sans-serif;
     font-weight: 700;
-
-    margin-left: 70px;
+    cursor: pointer;
 }
 
 .lista_casas{
@@ -122,25 +232,12 @@ div p {
     width: 70px;
 }
 
-.curiosidades{
-    width: 100%;
-    height: 452px;
-
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-
-    color: #fff;
-
-    background-color: #1B1A1A;
-
-}
 
 .curiosidades div {
     width: 648px;
     height: 351px;
-
+    background-image: url("../imagens/aspas.png");
+    background-repeat: no-repeat;
 }
 
 .curiosidades h3{
@@ -149,40 +246,40 @@ div p {
 
 footer{
     background-color: black;
-    height: 100px;
+    height: 7.5rem;
+    width: 100%;
     display: flex;
     justify-content: space-around;
+    align-items: center;   
+    color: white;   
+}
+
+.logo{
+    display: flex;
     align-items: center;
-    margin-top: 0px;
-    
 }
-.footer{
-    display: flex;
+
+.logoImg{
+    height: 6.25rem;
 }
+
 .logoTitle{
-    font-size: 20px;
-    color: white;
-    padding-top: 10px;
-    margin-left: -15px;       
+    font-size: 1.3em;
 }
-#brasao{
-    padding-top: 10px;
-    height: 80px;
-    margin-left: 20px;
-}
-#imgministerio{
+
+.imgministerio{
     height: 90px;
-    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
+    filter: invert(1);
 }
+
 .redesSociais{
-    justify-content: end;
     display: flex;
-    margin-right: 20px;
 }
+
 .redesSociais h1{
-    color: white;
     font-size: 20px;
 }
+
 .redesSociais img{
     height: 50px;
 }
