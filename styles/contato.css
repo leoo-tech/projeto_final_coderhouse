@@ -84,6 +84,15 @@ nav a:hover{
     font-size: 15px;
     align-items: center;
 }
+
+button {
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    border-color: white;
+    position: center;
+    align-items: center;
+}
+
 footer{
     background-color: black;
     height: 100px;
