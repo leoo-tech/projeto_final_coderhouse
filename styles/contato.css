@@ -58,8 +58,8 @@ nav a:hover{
     display: flex;
 }
 .conteudo img{
-    max-width:400px;
-    max-height:400px;
+    max-width:843px;
+    max-height:679px;
     margin-top: 50px;
     margin-left: 50px;
     border-radius: 15px;
@@ -70,7 +70,8 @@ nav a:hover{
     margin-left: 50px;
     margin-right: 50px;
     border-radius: 15px;
-    height: 350px;
+    width: 436px;
+    height: 75%;
 }
 .conteudo aside h1{
     padding: 25px;
@@ -80,21 +81,28 @@ nav a:hover{
 .conteudo aside p{
     margin: 25px;
     color: white;
-    font-size: 20px;
+    font-size: 15px;
     align-items: center;
 }
+
+button {
+    background-color: hsl(0, 0%, 5%);
+    color: white;
+    border-color: white;
+    position: center;
+    align-items: center;
+}
+
 footer{
-    grid-area: rodape;
     background-color: black;
     height: 100px;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    margin-top: 30px;
+    
 }
-.logo{
+.footer{
     display: flex;
 }
 .logoTitle{
@@ -102,11 +110,6 @@ footer{
     color: white;
     padding-top: 10px;
     margin-left: -15px;       
-}
-#brasao{
-    padding-top: 10px;
-    height: 80px;
-    margin-left: 20px;
 }
 #imgministerio{
     height: 90px;
@@ -123,4 +126,9 @@ footer{
 }
 .redesSociais img{
     height: 50px;
+}
+#brasao{
+    padding-top: 10px;
+    height: 80px;
+    margin-left: 20px;
 }

@@ -80,8 +80,8 @@ nav a:hover{
 }
 .copaContagem{
     color: hsl(0, 0%, 10%);
+    font-size: 30px;    
     margin-right: 120px;
-    font-size: 30px;
 }
 .copaContagem:hover{
     color: white;
@@ -115,7 +115,7 @@ img{
 }
 .copaMundial p{
     margin: 25px;    
-    font-size: 20px;
+    font-size: 13px;
     text-indent: 50px;
 }
 .quadribol{
@@ -123,13 +123,14 @@ img{
     background-color: hsl(0, 0%, 5%);
     color: white;
     border-radius: 15px;
+    height: 95%;
 }
 .quadribol h1{
     font-size: 30px;
     margin: 25px;
 }
 .quadribol p{
-    font-size: 20px;
+    font-size: 19px;
     text-indent: 50px;
     margin: 25px;
 }
