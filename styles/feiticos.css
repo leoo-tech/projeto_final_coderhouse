@@ -1,7 +1,8 @@
 body{
     margin: 0 auto;
     background: hsl(0, 0%, 0%); 
-    height: auto;    
+    height: auto;  
+    color: aliceblue;  
 }
 
 header{
@@ -48,103 +49,20 @@ nav a:hover{
     color: white;
 }
 
-main{
-    background-image: url(../imagens/fundo-index-1.png);
-    margin: 1% 0 1% 0;
-    padding: 0;
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;    
+form{
     display: flex;
-    flex-direction: column;
-    height: 960px;
-}
-.conteudoFigura1{
-    display: flex;
-}
-main h1{
-    color: #FFBD14;
-    line-height: 120px;
-    font-size: 140px;
-    margin-left: 100px;
-    margin-top: 10%;
-}
-main h2{
-    color: white;
-    margin-left: 100px;
-    font-size: 35px;
-    margin-top: 10%;
-}
-
-.logo{
-    margin-top: 50px;
-    display: flex;
-    margin-left: auto;
-    margin-right: 100px;
-    }
-
-main button{
-    background-color: #FFBD14;
-    font-size: 20px;
-    font-weight: bold;
-    width: 300px;
-    height: 45px;
-    border-radius: 20px;
-    text-align: center;
-    margin-left: 140px;
-    margin-top: 10%;
-}
-main button a{
-    color: black;
-    text-decoration: none;    
-}
-.apresentacao1{
-    background-color: black;
-}
-.apresentacao1 p{
-    color: white;
-    margin-left: 100px;
-    margin-right: 100px;
-    font-size: 25px;
-}
-.apresentacao2{
-    background-color: black;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.apresentacao2 img{    
-    margin: 0;
-    padding: 0;
-    background-size: 100% 100%;
-    background-position: center;
-    background-repeat: no-repeat;    
-    height: 960px;
-    width: 100%;
-}
-.apresentacao2 p{
-    color: white;
-    height: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 60px;
-    font-size: 25px;    
+    margin-top: 20px;
 }
 
-.apresentacao2 button{
-    background-color: #FFBD14;
+#spellList{
+    background-color: #242424;
+    border-radius: 10px;
+    display: flex;
+    color: white;
     font-size: 20px;
-    font-weight: bold;
-    width: 300px;
-    height: 45px;
-    border-radius: 20px;
-    margin-bottom: 60px;
-    
-}
-.apresentacao2 button a{
-    color: black;
-    text-decoration: none; 
+    margin-left: 20px;
 }
 footer{
     background-color: black;
@@ -152,7 +70,7 @@ footer{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 30px;       
+    margin-top: 30px;      
 }
 .footer{
     display: flex;
