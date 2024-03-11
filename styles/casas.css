@@ -7,61 +7,6 @@ body{
     flex-direction: column;
 }
 
-header{
-    display: flex;
-    flex-direction: column;
-}
-
-
-.cabecalho1{
-    background: rgb(0, 0, 0);
-    width: auto;
-    height: 140px;
-    display: flex;
-}
-.navegacao{
-    align-items: center;
-    margin: 5px;
-    margin-right: 60px;
-    display: flex;
-    list-style: none;
-    justify-content: space-between;    
-}
-.navegacao img{    
-    height: 120px;
-}
-.menu{    
-    color: white;    
-    text-decoration: none;
-    font-size: 25px;    
-}
-header img{
-    margin-left: 20px;
-    height: 100px;
-}
-nav{
-    margin-left: auto;
-}
-nav a:hover{
-    color: white;
-    text-decoration: none;
-    font-size: 30px;   
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-}
-
-nav li{
-    margin-right: 200px;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;
-}
 .lado-a-lado{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -70,6 +15,10 @@ nav a{
     "grifinoria sonserina"
     "corvinal lufalufa";
 }
+nav li{
+    margin-right: 200px;
+}
+
 section h1{
     color: #FFBD14;
     font-size: 50px;
@@ -96,43 +45,4 @@ section img{
 .apresentacao2 button a{
     color: black;
     text-decoration: none; 
-}
-footer{
-    background-color: black;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 30px;
-    
-}
-.footer{
-    display: flex;
-}
-.logoTitle{
-    font-size: 20px;
-    color: white;
-    padding-top: 10px;
-    margin-left: -15px;       
-}
-#imgministerio{
-    height: 90px;
-    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
-}
-.redesSociais{
-    justify-content: end;
-    display: flex;
-    margin-right: 20px;
-}
-.redesSociais h1{
-    color: white;
-    font-size: 20px;
-}
-.redesSociais img{
-    height: 50px;
-}
-#brasao{
-    padding-top: 10px;
-    height: 80px;
-    margin-left: 20px;
 }
