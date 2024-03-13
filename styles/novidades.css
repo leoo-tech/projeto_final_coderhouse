@@ -40,7 +40,7 @@ body{
 }
 .copaContagem:hover{
     color: white;
-    font-size: 30px;
+    
 }
 .conteudo{
     grid-area: corpo;
