@@ -63,13 +63,13 @@ footer{
 footer .conteudoFigura1{
     display: flex;
 }
-footer .logoTitle{
+.logoTitle{
     font-size: 20px;
     color: white;
     padding-top: 10px;
     margin-left: -15px;       
 }
-footer #brasao{
+#brasao{
     padding-top: 10px;
     height: 80px;
     margin-left: 20px;
