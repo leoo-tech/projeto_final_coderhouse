@@ -4,50 +4,6 @@ body{
     height: auto; 
 }
 
-header{
-    background-color: #000000;
-    height: 7.5rem;
-    width: 100%;
-    display: flex;
-    align-items: center;
-}
-
-header img{
-    margin-left: 20px;
-    height: 6.25rem;
-}
-
-nav{
-    width: 100%;
-}
-
-nav ul{
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav a{
-    text-decoration: none;
-    color: white;
-    font-size: 20px;  
-}
-
-nav a:hover{
-    color: white;
-    text-decoration: none;
-    font-size: 30px;   
-}
-
-.dropdown-menu{
-    background: hsl(0, 0%, 10%);
-    color: white;
-}
-.dropdown-item{
-    color: white;
-}
-
 .conteiner{
     display: grid;
     row-gap: 2%;
@@ -79,13 +35,12 @@ nav a:hover{
     margin-bottom: 5px;    
 }
 .copaContagem{
-    color: hsl(0, 0%, 10%);
-    font-size: 30px;    
+    color: hsl(0, 0%,30%);
     margin-right: 120px;
 }
 .copaContagem:hover{
     color: white;
-    font-size: 35px;
+    font-size: 30px;
 }
 .conteudo{
     grid-area: corpo;
@@ -133,42 +88,4 @@ img{
     font-size: 19px;
     text-indent: 50px;
     margin: 25px;
-}
-footer{
-    grid-area: rodape;
-    background-color: black;
-    height: 100px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;    
-}
-.logo{
-    display: flex;
-}
-.logoTitle{
-    font-size: 20px;
-    color: white;
-    padding-top: 10px;
-    margin-left: -15px;       
-}
-#brasao{
-    padding-top: 10px;
-    height: 80px;
-    margin-left: 20px;
-}
-#imgministerio{
-    height: 90px;
-    filter: invert(1); /*inverte as cores da logo do Ministério. A imagem original tem fundo branco*/ 
-}
-.redesSociais{
-    justify-content: end;
-    display: flex;
-    margin-right: 20px;
-}
-.redesSociais h1{
-    color: white;
-    font-size: 20px;
-}
-.redesSociais img{
-    height: 50px;
 }
