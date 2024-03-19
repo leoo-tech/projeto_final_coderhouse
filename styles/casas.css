@@ -12,11 +12,20 @@ body{
     grid-template-areas: 
     "grifinoria sonserina"
     "corvinal lufalufa";
+    margin-left: -50px;
 }
-nav li{
-    margin-right: 200px;
-    list-style: none;
+nav .lado-a-lado ul{
+    
+    
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav .lado-a-lado li{
+    
+    list-style: none;
+    
     justify-content: space-around;
     align-items: center;
 }

@@ -59,8 +59,6 @@ main button{
     text-align: center;
     margin-left: 140px;
 }
-<<<<<<< HEAD
-=======
 footer{
     background-color: black;
     height: 100px;
@@ -125,4 +123,3 @@ footer{
 .item9 { grid-area: item9; }
 .item10 { grid-area: item10; }
 .item11 { grid-area: item11; }
->>>>>>> 7730810c55eecf5742f6680076138fc5d9377124
