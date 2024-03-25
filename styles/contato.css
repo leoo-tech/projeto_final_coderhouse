@@ -1,45 +1,91 @@
 body{
     margin: 0;
     background: hsl(0, 0%, 10%);    
-    display: flex;
-    flex-direction: column;
     height: auto;
-    min-height: 100vh; 
+}
+.conteiner{
+    display: grid;
+    row-gap: 2%;
+    grid-template-columns: auto;
+    grid-template-rows: 140px 750px 100px;
+    grid-template-areas: 
+    "cabecalho"
+    "corpo"
+    "rodape";
+}
+.conteudo{    
+    grid-area: corpo;
+    display: grid;
+    margin: 0px 80px 0px 80px;
+    column-gap: 5%;
+    row-gap: 3%;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+    "image carta"
+    "image formulario";    
 }
 
-.conteudo{    
-    display: flex;
-    box-sizing: border-box;
-    flex-direction: column;    
-}
-.lado-a-lado{
-    display: flex;
-}
-.conteudo img{
-    max-width:843px;
-    max-height:679px;
-    margin-top: 50px;
-    margin-left: 50px;
+img{
+    grid-area: image;
     border-radius: 15px;
+    max-width: 100%; /* Garante que a largura da imagem nunca ultrapasse a largura do contêiner pai */
+    height: auto; /* Mantém a proporção da imagem ajustando automaticamente a altura */
+    display: block; /* Remove qualquer espaço extra abaixo da imagem */
+    margin: 0 auto; /* Centralize a imagem dentro do contêiner */
 }
-.conteudo aside{
+@media screen and (max-width: 600px) {
+    .container {
+        padding: 10px; /* Reduz o preenchimento do contêiner em telas menores */
+    }
+}
+.carta{
+    grid-area: carta;
     background-color: hsl(0, 0%, 5%);
-    margin-top: 50px;
-    margin-left: 50px;
-    margin-right: 50px;
-    border-radius: 15px;
-    width: 436px;
-    height: 75%;
-}
-.conteudo aside h1{
-    padding: 25px;
     color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+.carta h1{
+    margin: 25px;    
     font-size: 30px;
 }
-.conteudo aside p{
-    margin: 25px;
+.carta p{
+    margin: 25px;    
+    font-size: 13px;
+    text-indent: 50px;
+}
+.formulario{
+    grid-area: formulario;
+    background-color: hsl(0, 0%, 5%);
     color: white;
-    font-size: 15px;
-    align-items: center;
+    border-radius: 15px;
+    padding: 10px;
+}
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group input[type="submit"] {
+    background-color: hsl(0, 0%, 10%);
+    color: white;
+    cursor: pointer;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: hsl(0, 0%, 10%);
 }
 
